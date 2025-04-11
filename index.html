@@ -161,20 +161,24 @@
 
     <!-- Newsletter Section -->
    
-    <a
-      href="javascript:void(
-        window.open(
-          'https://form.jotform.com/251001376506649',
-          'blank',
-          'scrollbars=yes,
-          toolbar=no,
-          width=700,
-          height=500'
-        )
-      )
-    ">
-      Evento Registrar na Newsletter
-    </a>
+    <a href="#" onclick="openJotform()">Evento Registrar na Newsletter</a>
+
+<script>
+function openJotform() {
+    const jotformPopup = window.open(
+        'https://form.jotform.com/251001376506649',
+        'JotForm',
+        'scrollbars=yes,toolbar=no,width=700,height=500'
+    );
+
+    const pollTimer = window.setInterval(function () {
+        if (jotformPopup.closed) {
+            clearInterval(pollTimer);
+            window.location.href = "obrigado.html";
+        }
+    }, 500);
+}
+</script>
 
     <!-- FAQ Section -->
     <section id="faq" class="faq-section py-5">
