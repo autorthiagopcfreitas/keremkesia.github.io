@@ -188,22 +188,7 @@
             </div>
         </div>
     </section>
-        <script>
-function openJotform() {
-    const jotformPopup = window.open(
-        'https://form.jotform.com/251001376506649',
-        'JotForm',
-        'scrollbars=yes,toolbar=no,width=700,height=500'
-    );
 
-    const pollTimer = window.setInterval(function () {
-        if (jotformPopup.closed) {
-            clearInterval(pollTimer);
-            window.location.href = "obrigado.html";
-        }
-    }, 500);
-}
-</script>
     <!-- Footer -->
     <footer class="bg-light py-5">
         <div class="container">
@@ -242,6 +227,21 @@ function openJotform() {
     <!-- Custom JS -->
     <script src="script.js"></script>
    
+        <script>
+function openJotform() {
+    const jotformPopup = window.open(
+        'https://form.jotform.com/251001376506649',
+        'JotForm',
+        'scrollbars=yes,toolbar=no,width=700,height=500'
+    );
 
+    const pollTimer = window.setInterval(function () {
+        if (jotformPopup.closed) {
+            clearInterval(pollTimer);
+            window.location.href = "obrigado.html";
+        }
+    }, 500);
+}
+</script>
 </body>
 </html> 
