@@ -23,7 +23,7 @@
       isVoice: undefined
     });
   });
-</script>
+
     
 // Chat functionality
 const chatMessages = document.getElementById('chat-messages');
@@ -179,3 +179,4 @@ document.addEventListener('DOMContentLoaded', () => {
         addNeuronLines(heroSection);
     }
 }); 
+</script>
